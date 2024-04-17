@@ -44,42 +44,6 @@
       "parent": "noi@ai",
       "text": "Copilot",
       "url": "https://copilot.microsoft.com"
-    },
-    {
-      "id": "noi:huggingchat",
-      "parent": "noi@ai",
-      "text": "HuggingChat",
-      "url": "https://huggingface.co/chat"
-    },
-    {
-      "id": "noi:groq",
-      "parent": "noi@ai",
-      "text": "Groq",
-      "url": "https://groq.com"
-    },
-    {
-      "id": "noi:pi",
-      "parent": "noi@ai",
-      "text": "Pi",
-      "url": "https://pi.ai/talk"
-    },
-    {
-      "id": "noi:coze",
-      "parent": "noi@ai",
-      "text": "Coze",
-      "url": "https://www.coze.com/home"
-    },
-    {
-      "id": "noi:you",
-      "parent": "noi@ai",
-      "text": "YOU",
-      "url": "https://you.com"
-    },
-    {
-      "id": "noi:suno",
-      "parent": "noi@ai",
-      "text": "Suno AI",
-      "url": "https://app.suno.ai"
     }
   ]
 }
