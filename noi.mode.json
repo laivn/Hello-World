@@ -28,18 +28,6 @@
       "url": "https://gemini.google.com"
     },
     {
-      "id": "noi:poe",
-      "parent": "noi@ai",
-      "text": "Poe",
-      "url": "https://poe.com"
-    },
-    {
-      "id": "noi:perplexity",
-      "parent": "noi@ai",
-      "text": "Perplexity",
-      "url": "https://www.perplexity.ai"
-    },
-    {
       "id": "noi:copilot",
       "parent": "noi@ai",
       "text": "Copilot",
