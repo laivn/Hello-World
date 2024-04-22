@@ -34,9 +34,9 @@
       "url": "https://copilot.microsoft.com"
     },
     {
-      "id": "noi:Meta AI",
+      "id": "noi:MetaAI",
       "parent": "noi@ai",
-      "text": "Meta AI",
+      "text": "MetaAI",
       "url": "https://huggingface.co/chat/"
     }
       ]
