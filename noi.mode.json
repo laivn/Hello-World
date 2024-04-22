@@ -36,8 +36,8 @@
     {
       "id": "noi:MetaAI",
       "parent": "noi@ai",
-      "text": "MetaAI",
+      "text": "Meta AI",
       "url": "https://huggingface.co/chat/"
     }
-      ]
+  ]
 }
