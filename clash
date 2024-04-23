@@ -258,6 +258,7 @@ rules:
   - DOMAIN-SUFFIX,youtube.com,香港
   - DOMAIN-SUFFIX,yt.be,香港
   - DOMAIN-SUFFIX,ytimg.com,香港
+  - DOMAIN-SUFFIX,huggingface.co,香港
   # - IP-CIDR,74.125.0.0/16,no-resolve,DIRECT
   # - IP-CIDR,173.194.0.0/16,no-resolve,DIRECT
 
