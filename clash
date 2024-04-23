@@ -236,6 +236,30 @@ rules:
   - IP-CIDR,100.64.0.0/10,DIRECT
   - IP-CIDR,224.0.0.0/4,DIRECT
   - IP-CIDR6,fe80::/10,DIRECT
+  - DOMAIN-KEYWORD,gmail,DIRECT
+  - DOMAIN-KEYWORD,google,DIRECT
+  - DOMAIN-SUFFIX,1e100.net,DIRECT
+  - DOMAIN-SUFFIX,2mdn.net,DIRECT
+  - DOMAIN-SUFFIX,app-measurement.net,DIRECT
+  - DOMAIN-SUFFIX,g.co,DIRECT
+  - DOMAIN-SUFFIX,ggpht.com,DIRECT
+  - DOMAIN-SUFFIX,goo.gl,DIRECT
+  - DOMAIN-SUFFIX,googleapis.cn,DIRECT
+  - DOMAIN-SUFFIX,googleapis.com,DIRECT
+  - DOMAIN-SUFFIX,gstatic.cn,DIRECT
+  - DOMAIN-SUFFIX,gstatic.com,DIRECT
+  - DOMAIN-SUFFIX,gvt0.com,DIRECT
+  - DOMAIN-SUFFIX,gvt1.com,DIRECT
+  - DOMAIN-SUFFIX,gvt2.com,DIRECT
+  - DOMAIN-SUFFIX,gvt3.com,DIRECT
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT
+  - DOMAIN-SUFFIX,youtu.be,DIRECT
+  - DOMAIN-SUFFIX,youtube-nocookie.com,DIRECT
+  - DOMAIN-SUFFIX,youtube.com,DIRECT
+  - DOMAIN-SUFFIX,yt.be,DIRECT
+  - DOMAIN-SUFFIX,ytimg.com,DIRECT
+  - IP-CIDR,74.125.0.0/16,no-resolve,DIRECT
+  - IP-CIDR,173.194.0.0/16,no-resolve,DIRECT
 
 script:
   shortcuts:
