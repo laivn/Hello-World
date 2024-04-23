@@ -80,7 +80,7 @@ dns:
   nameserver: [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]                     
     
 # 策略组引用相关参数
-pg: &pg {type: select, proxies: [手动切换, 香港, 美国, DIRECT]}
+pg: &pg {type: select, proxies: [手动切换, Auto, 香港, 美国, DIRECT]}
 # 订阅更新和延迟测试相关参数
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://latency-test.skk.moe/endpoint, interval: 1800}}
 # 自动选择策略组：选取延迟最低节点
@@ -109,7 +109,7 @@ proxy-groups:
 
   #分流分组
 
-  - {name: 手动切换, type: select, use: [Subscribe], proxies: [香港, 美国, DIRECT], icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src/assets/image/logo.png}
+  - {name: 手动切换, type: select, use: [Subscribe], proxies: [Auto, 香港, 美国, DIRECT], icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src/assets/image/logo.png}
 
   # - {name: 国外网站, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png}
 
@@ -140,6 +140,8 @@ proxy-groups:
   # - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color//Final.png}
 
   #节点地区分组
+
+  - {name: Auto, <<: *auto, icon: 🌐}
 
   - {name: 香港, <<: *auto, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
 
@@ -258,7 +260,6 @@ rules:
   - DOMAIN-SUFFIX,youtube.com,香港
   - DOMAIN-SUFFIX,yt.be,香港
   - DOMAIN-SUFFIX,ytimg.com,香港
-  - DOMAIN-SUFFIX,huggingface.co,香港
   # - IP-CIDR,74.125.0.0/16,no-resolve,DIRECT
   # - IP-CIDR,173.194.0.0/16,no-resolve,DIRECT
 
