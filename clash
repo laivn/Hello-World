@@ -156,7 +156,7 @@ proxy-groups:
 rule-providers:
 
   # 局域网   
-  Lan: {<<: *c, format: text, path: ./rule-providers/Lan.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list}
+  # Lan: {<<: *c, format: text, path: ./rule-providers/Lan.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list}
 
   # # 下载服务
   # Download: {<<: *c, format: text, path: ./rule-providers/Download.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Download.list}
@@ -205,6 +205,7 @@ rule-providers:
   # ProxyGFW: {<<: *c, format: text, path: ./rule-providers/ProxyGFW.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list}
  
 rules:
+
   #- SCRIPT,quic,REJECT
   #- RULE-SET,Download,DIRECT
   # - RULE-SET,AD,广告拦截
@@ -224,9 +225,17 @@ rules:
   # - RULE-SET,ProxyMedia,国际媒体
   # - RULE-SET,ProxyGFW,国外网站
   - RULE-SET,ChinaDomain,DIRECT
-  - RULE-SET,Lan,DIRECT
+  # - RULE-SET,Lan,DIRECT
   # - GEOIP,CN,国内网站
   # - MATCH,兜底分流
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR6,fe80::/10,DIRECT
 
 script:
   shortcuts:
