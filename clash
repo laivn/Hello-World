@@ -80,7 +80,7 @@ dns:
   nameserver: [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]                     
     
 # 策略组引用相关参数
-pg: &pg {type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点, DIRECT]}
+pg: &pg {type: select, proxies: [手动切换, 香港, 美国, DIRECT]}
 # 订阅更新和延迟测试相关参数
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://latency-test.skk.moe/endpoint, interval: 1800}}
 # 自动选择策略组：选取延迟最低节点
@@ -109,35 +109,35 @@ proxy-groups:
 
   #分流分组
 
-  - {name: 手动切换, type: select, use: [Subscribe], proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点, DIRECT], icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src/assets/image/logo.png}
+  - {name: 手动切换, type: select, use: [Subscribe], proxies: [香港节点, 美国节点, DIRECT], icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src/assets/image/logo.png}
 
   - {name: 国外网站, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png}
 
-  - {name: 国际媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
+  # - {name: 国际媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
 
-  - {name: 苹果服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
+  # - {name: 苹果服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
 
   - {name: 微软服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
 
-  - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png}
+  # - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png}
 
-  - {name: 电报消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png}
+  # - {name: 电报消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png}
 
-  - {name: 推特消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
+  # - {name: 推特消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
 
   - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
 
-  - {name: 游戏平台, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
+  # - {name: 游戏平台, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
 
-  - {name: Emby, <<: *pg, use: [Subscribe], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
+  # - {name: Emby, <<: *pg, use: [Subscribe], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
 
-  - {name: 哔哩哔哩, type: select, proxies: [DIRECT, 香港节点, 台湾节点], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png}
+  # - {name: 哔哩哔哩, type: select, proxies: [DIRECT, 香港节点, 台湾节点], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png}
 
-  - {name: 国内网站, type: select, proxies: [DIRECT, 手动切换], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png}
+  # - {name: 国内网站, type: select, proxies: [DIRECT, 手动切换], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png}
 
-  - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png}
+  # - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png}
 
-  - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color//Final.png}
+  # - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color//Final.png}
 
   #节点地区分组
 
@@ -145,88 +145,88 @@ proxy-groups:
 
   - {name: 美国节点, <<: *auto, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
 
-  - {name: 狮城节点, <<: *auto, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
+  # - {name: 狮城节点, <<: *auto, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
 
-  - {name: 日本节点, <<: *auto, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
+  # - {name: 日本节点, <<: *auto, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
 
-  - {name: 台湾节点, <<: *auto, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
+  # - {name: 台湾节点, <<: *auto, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
 
-  - {name: 欧洲节点, <<: *auto, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
+  # - {name: 欧洲节点, <<: *auto, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
 
 rule-providers:
 
   # 局域网   
   Lan: {<<: *c, format: text, path: ./rule-providers/Lan.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list}
 
-  # 下载服务
-  Download: {<<: *c, format: text, path: ./rule-providers/Download.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Download.list}
+  # # 下载服务
+  # Download: {<<: *c, format: text, path: ./rule-providers/Download.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Download.list}
       
-  #广告拦截
-  AD: {<<: *d, format: text, path: ./rule-providers/AD.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list}
+  # #广告拦截
+  # AD: {<<: *d, format: text, path: ./rule-providers/AD.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list}
 
   # 苹果服务
   Apple: {<<: *c, format: text, path: ./rule-providers/Apple.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
 
-  # 微软服务 
-  OneDrive: {<<: *c, format: text, path: ./rule-providers/OneDrive.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list}
-  Github: {<<: *c, format: text, path: ./rule-providers/Github.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list}
-  Microsoft: {<<: *c, format: text, path: ./rule-providers/Microsoft.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list}
+  # # 微软服务 
+  # OneDrive: {<<: *c, format: text, path: ./rule-providers/OneDrive.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list}
+  # Github: {<<: *c, format: text, path: ./rule-providers/Github.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list}
+  # Microsoft: {<<: *c, format: text, path: ./rule-providers/Microsoft.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list}
 
   # 谷歌服务
-  YouTube: {<<: *c, format: text, path: ./rule-providers/YouTube.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list}
-  Google: {<<: *c, format: text, path: ./rule-providers/Google.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list}
+  # YouTube: {<<: *c, format: text, path: ./rule-providers/YouTube.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list}
+  # Google: {<<: *c, format: text, path: ./rule-providers/Google.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list}
 
-  # 电报消息
-  Telegram: {<<: *c, format: text, path: ./rule-providers/Telegram.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list}
+  # # 电报消息
+  # Telegram: {<<: *c, format: text, path: ./rule-providers/Telegram.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list}
 
-  # 推特消息
-  Twitter: {<<: *c, format: text, path: ./rule-providers/Twitter.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list}
+  # # 推特消息
+  # Twitter: {<<: *c, format: text, path: ./rule-providers/Twitter.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list}
 
-  # 哔哩哔哩
-  BiliBili: {<<: *c, format: text, path: ./rule-providers/BiliBili.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Bilibili.list}
+  # # 哔哩哔哩
+  # BiliBili: {<<: *c, format: text, path: ./rule-providers/BiliBili.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Bilibili.list}
 
-  # 游戏平台
-  Steam: {<<: *c, format: text, path: ./rule-providers/steam.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list}
-  Epic: {<<: *c, format: text, path: ./rule-providers/Epic.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list}
+  # # 游戏平台
+  # Steam: {<<: *c, format: text, path: ./rule-providers/steam.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list}
+  # Epic: {<<: *c, format: text, path: ./rule-providers/Epic.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list}
 
   # AI平台
   AI: {<<: *c, format: text, path: ./rule-providers/AI.list,  url: https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list}
 
   # 中国大陆
-  ChinaDomain: {<<: *c, format: text, path: ./rule-providers/ChinaDomain.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ChinaDomain.list}
+  ChinaDomain: {<<: *c, format: text, path: ./rule-providers/ChinaDomain.list,  url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list}
 
-  # Emby
-  Emby: {<<: *c, format: text, path: ./rule-providers/Emby.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
+  # # Emby
+  # Emby: {<<: *c, format: text, path: ./rule-providers/Emby.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
 
-  # 国际媒体
-  ProxyMedia: {<<: *c, format: text, path: ./rule-providers/ProxyMedia.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyMedia.list}
+  # # 国际媒体
+  # ProxyMedia: {<<: *c, format: text, path: ./rule-providers/ProxyMedia.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyMedia.list}
 
-  # 代理网站
-  ProxyGFW: {<<: *c, format: text, path: ./rule-providers/ProxyGFW.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list}
+  # # 代理网站
+  # ProxyGFW: {<<: *c, format: text, path: ./rule-providers/ProxyGFW.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list}
  
 rules:
   #- SCRIPT,quic,REJECT
   #- RULE-SET,Download,DIRECT
-  - RULE-SET,AD,广告拦截
+  # - RULE-SET,AD,广告拦截
   - RULE-SET,AI,AI
   - RULE-SET,Apple,苹果服务
-  - RULE-SET,OneDrive,微软服务
-  - RULE-SET,Github,微软服务
-  - RULE-SET,Microsoft,微软服务
-  - RULE-SET,YouTube,谷歌服务
-  - RULE-SET,Google,谷歌服务
-  - RULE-SET,Telegram,电报消息
-  - RULE-SET,Twitter,推特消息
-  - RULE-SET,BiliBili,哔哩哔哩
-  - RULE-SET,Steam,游戏平台
-  - RULE-SET,Epic,游戏平台
-  - RULE-SET,Emby,Emby
-  - RULE-SET,ProxyMedia,国际媒体
-  - RULE-SET,ProxyGFW,国外网站
-  - RULE-SET,ChinaDomain,国内网站
+  # - RULE-SET,OneDrive,微软服务
+  # - RULE-SET,Github,微软服务
+  # - RULE-SET,Microsoft,微软服务
+  # - RULE-SET,YouTube,谷歌服务
+  # - RULE-SET,Google,谷歌服务
+  # - RULE-SET,Telegram,电报消息
+  # - RULE-SET,Twitter,推特消息
+  # - RULE-SET,BiliBili,哔哩哔哩
+  # - RULE-SET,Steam,游戏平台
+  # - RULE-SET,Epic,游戏平台
+  # - RULE-SET,Emby,Emby
+  # - RULE-SET,ProxyMedia,国际媒体
+  # - RULE-SET,ProxyGFW,国外网站
+  # - RULE-SET,ChinaDomain,国内网站
   - RULE-SET,Lan,DIRECT
-  - GEOIP,CN,国内网站
-  - MATCH,兜底分流
+  # - GEOIP,CN,国内网站
+  # - MATCH,兜底分流
 
 script:
   shortcuts:
