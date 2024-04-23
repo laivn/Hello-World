@@ -193,7 +193,7 @@ rule-providers:
   AI: {<<: *c, format: text, path: ./rule-providers/AI.list,  url: https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list}
 
   # 中国大陆
-  # ChinaDomain: {<<: *c, format: text, path: ./rule-providers/ChinaDomain.list,  url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list}
+  ChinaDomain: {<<: *c, format: text, path: ./rule-providers/ChinaDomain.list,  url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list}
 
   # # Emby
   # Emby: {<<: *c, format: text, path: ./rule-providers/Emby.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
@@ -223,7 +223,7 @@ rules:
   # - RULE-SET,Emby,Emby
   # - RULE-SET,ProxyMedia,国际媒体
   # - RULE-SET,ProxyGFW,国外网站
-  # - RULE-SET,ChinaDomain,国内网站
+  - RULE-SET,ChinaDomain,DIRECT
   - RULE-SET,Lan,DIRECT
   # - GEOIP,CN,国内网站
   # - MATCH,兜底分流
