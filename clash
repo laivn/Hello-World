@@ -258,8 +258,8 @@ rules:
   - DOMAIN-SUFFIX,youtube.com,DIRECT
   - DOMAIN-SUFFIX,yt.be,DIRECT
   - DOMAIN-SUFFIX,ytimg.com,DIRECT
-  - IP-CIDR,74.125.0.0/16,no-resolve,DIRECT
-  - IP-CIDR,173.194.0.0/16,no-resolve,DIRECT
+  # - IP-CIDR,74.125.0.0/16,no-resolve,DIRECT
+  # - IP-CIDR,173.194.0.0/16,no-resolve,DIRECT
 
 script:
   shortcuts:
