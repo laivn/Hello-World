@@ -207,7 +207,12 @@ rule-providers:
   # ProxyGFW: {<<: *c, format: text, path: ./rule-providers/ProxyGFW.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list}
  
 rules:
-
+  - DOMAIN-KEYWORD,instagram,香港
+  - DOMAIN-SUFFIX,api.githubcopilot.com,香港
+  - DOMAIN-SUFFIX,copilot-proxy.githubusercontent.com,香港
+  - DOMAIN-SUFFIX,copilot.microsoft.com,香港
+  - DOMAIN-SUFFIX,sydney.bing.com,香港
+  - DOMAIN-SUFFIX,www.bing.com,香港
   #- SCRIPT,quic,REJECT
   #- RULE-SET,Download,DIRECT
   # - RULE-SET,AD,广告拦截
