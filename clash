@@ -236,28 +236,28 @@ rules:
   - IP-CIDR,100.64.0.0/10,DIRECT
   - IP-CIDR,224.0.0.0/4,DIRECT
   - IP-CIDR6,fe80::/10,DIRECT
-  - DOMAIN-KEYWORD,gmail,美国
-  - DOMAIN-KEYWORD,google,美国
-  - DOMAIN-SUFFIX,1e100.net,美国
-  - DOMAIN-SUFFIX,2mdn.net,美国
-  - DOMAIN-SUFFIX,app-measurement.net,美国
-  - DOMAIN-SUFFIX,g.co,美国
-  - DOMAIN-SUFFIX,ggpht.com,美国
-  - DOMAIN-SUFFIX,goo.gl,美国
-  - DOMAIN-SUFFIX,googleapis.cn,美国
-  - DOMAIN-SUFFIX,googleapis.com,美国
-  - DOMAIN-SUFFIX,gstatic.cn,美国
-  - DOMAIN-SUFFIX,gstatic.com,美国
-  - DOMAIN-SUFFIX,gvt0.com,美国
-  - DOMAIN-SUFFIX,gvt1.com,美国
-  - DOMAIN-SUFFIX,gvt2.com,美国
-  - DOMAIN-SUFFIX,gvt3.com,美国
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,美国
-  - DOMAIN-SUFFIX,youtu.be,美国
-  - DOMAIN-SUFFIX,youtube-nocookie.com,美国
-  - DOMAIN-SUFFIX,youtube.com,美国
-  - DOMAIN-SUFFIX,yt.be,美国
-  - DOMAIN-SUFFIX,ytimg.com,美国
+  - DOMAIN-KEYWORD,gmail,香港
+  - DOMAIN-KEYWORD,google,香港
+  - DOMAIN-SUFFIX,1e100.net,香港
+  - DOMAIN-SUFFIX,2mdn.net,香港
+  - DOMAIN-SUFFIX,app-measurement.net,香港
+  - DOMAIN-SUFFIX,g.co,香港
+  - DOMAIN-SUFFIX,ggpht.com,香港
+  - DOMAIN-SUFFIX,goo.gl,香港
+  - DOMAIN-SUFFIX,googleapis.cn,香港
+  - DOMAIN-SUFFIX,googleapis.com,香港
+  - DOMAIN-SUFFIX,gstatic.cn,香港
+  - DOMAIN-SUFFIX,gstatic.com,香港
+  - DOMAIN-SUFFIX,gvt0.com,香港
+  - DOMAIN-SUFFIX,gvt1.com,香港
+  - DOMAIN-SUFFIX,gvt2.com,香港
+  - DOMAIN-SUFFIX,gvt3.com,香港
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,香港
+  - DOMAIN-SUFFIX,youtu.be,香港
+  - DOMAIN-SUFFIX,youtube-nocookie.com,香港
+  - DOMAIN-SUFFIX,youtube.com,香港
+  - DOMAIN-SUFFIX,yt.be,香港
+  - DOMAIN-SUFFIX,ytimg.com,香港
   # - IP-CIDR,74.125.0.0/16,no-resolve,DIRECT
   # - IP-CIDR,173.194.0.0/16,no-resolve,DIRECT
 
