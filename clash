@@ -230,7 +230,6 @@ rules:
   - RULE-SET,ChinaDomain,DIRECT
   # - RULE-SET,Lan,DIRECT
   # - GEOIP,CN,国内网站
-  # - MATCH,兜底分流
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
@@ -264,6 +263,8 @@ rules:
   - DOMAIN-SUFFIX,huggingface.co,香港
   # - IP-CIDR,74.125.0.0/16,no-resolve,DIRECT
   # - IP-CIDR,173.194.0.0/16,no-resolve,DIRECT
+
+  - MATCH,DIRECT
 
 script:
   shortcuts:
