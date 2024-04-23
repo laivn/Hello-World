@@ -212,7 +212,7 @@ rules:
   #- RULE-SET,Download,DIRECT
   # - RULE-SET,AD,广告拦截
   - RULE-SET,AI,AI
-  - RULE-SET,github,香港
+  - RULE-SET,Github,香港
   # - RULE-SET,Apple,苹果服务
   # - RULE-SET,OneDrive,微软服务
   # - RULE-SET,Github,微软服务
