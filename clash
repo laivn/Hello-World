@@ -165,7 +165,7 @@ rule-providers:
   # AD: {<<: *d, format: text, path: ./rule-providers/AD.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list}
 
   # 苹果服务
-  Apple: {<<: *c, format: text, path: ./rule-providers/Apple.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
+  # Apple: {<<: *c, format: text, path: ./rule-providers/Apple.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
 
   # # 微软服务 
   # OneDrive: {<<: *c, format: text, path: ./rule-providers/OneDrive.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list}
@@ -209,7 +209,7 @@ rules:
   #- RULE-SET,Download,DIRECT
   # - RULE-SET,AD,广告拦截
   - RULE-SET,AI,AI
-  - RULE-SET,Apple,苹果服务
+  # - RULE-SET,Apple,苹果服务
   # - RULE-SET,OneDrive,微软服务
   # - RULE-SET,Github,微软服务
   # - RULE-SET,Microsoft,微软服务
