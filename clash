@@ -117,7 +117,7 @@ proxy-groups:
 
   # - {name: 苹果服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
 
-  # - {name: 微软服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
+  - {name: github, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
 
   # - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png}
 
@@ -169,9 +169,9 @@ rule-providers:
   # 苹果服务
   # Apple: {<<: *c, format: text, path: ./rule-providers/Apple.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
 
-  # 微软服务 
+  # # 微软服务 
   # OneDrive: {<<: *c, format: text, path: ./rule-providers/OneDrive.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list}
-Github: {<<: *c, format: text, path: ./rule-providers/Github.list,  url: https://raw.githubusercontent.com/laivn/Hello-World/master/clashrule.list?token=GHSAT0AAAAAACRCUXASIES5IDQJSQXNEARKZRHJMLQ}
+  Github: {<<: *c, format: text, path: ./rule-providers/Github.list,  url: https://raw.githubusercontent.com/laivn/Hello-World/master/clashrule.list?token=GHSAT0AAAAAACRCUXASIES5IDQJSQXNEARKZRHJMLQ}
   # Microsoft: {<<: *c, format: text, path: ./rule-providers/Microsoft.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list}
 
   # 谷歌服务
