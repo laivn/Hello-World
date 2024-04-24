@@ -119,7 +119,9 @@ proxy-groups:
 
   # - {name: 推特消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
 
-  - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
+  - {name: AI, type: select, use: [Subscribe], proxies: [Auto, 香港, 美国], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
+
+  # - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
 
  
   #节点地区分组
