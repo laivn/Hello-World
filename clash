@@ -181,7 +181,7 @@ rule-providers:
   # Epic: {<<: *c, format: text, path: ./rule-providers/Epic.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list}
 
   # AI平台
-  AI: {<<: *c, format: text, path: ./rule-providers/AI.list,  url: https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list}
+  AI: {<<: *c, format: text, path: ./rule-providers/AI.list,  url: https://raw.githubusercontent.com/laivn/Hello-World/master/airule.list}
 
   # 中国大陆
   ChinaDomain: {<<: *c, format: text, path: ./rule-providers/ChinaDomain.list,  url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list}
