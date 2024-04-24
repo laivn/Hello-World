@@ -126,15 +126,15 @@ proxy-groups:
 
   - {name: Auto, <<: *auto, icon: 🌐}
 
-  - {name: 香港, <<: *auto, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
+  - {name: 香港, <<: *auto, filter: "(?i)🇭🇰|香港|(\b(HK|HKG|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
 
   - {name: 美国, <<: *auto, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
 
   - {name: 其他, <<: *auto, filter: "(?i)^(?!.*(?:🇭🇰|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|美|us|unitedstates)).*", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
 
-  # - {name: 日本节点, <<: *auto, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
+  - {name: 日本节点, <<: *auto, filter: "(?i)🇯🇵|日本|东京|(\b(JPN|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
 
-  # - {name: 台湾节点, <<: *auto, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
+  - {name: 台湾节点, <<: *auto, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TWN|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
 
   # - {name: 欧洲节点, <<: *auto, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
 
