@@ -130,7 +130,7 @@ proxy-groups:
 
   - {name: 美国, <<: *auto, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
 
-  - {name: 其他, <<: *auto, filter: "(?i)^(?!.*(?:🇭🇰|🇺🇸|🇨🇳|港|hk|hongkong|美|us|unitedstates)).*", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
+  - {name: 其他, <<: *auto, filter: "(?i)^(?!.*(?:🇭🇰|🇺🇸|🇨🇳|港|hk|hongkong|🇯🇵|日本|JPN|美|us|unitedstates)).*", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
 
   - {name: 日本, <<: *auto, filter: "(?i)🇯🇵|日本|东京|(\b(JPN|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
 
