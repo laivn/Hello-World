@@ -127,18 +127,7 @@ proxy-groups:
 
   - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
 
-  # - {name: 游戏平台, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
-
-  # - {name: Emby, <<: *pg, use: [Subscribe], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
-
-  # - {name: 哔哩哔哩, type: select, proxies: [DIRECT, 香港节点, 台湾节点], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili.png}
-
-  # - {name: 国内网站, type: select, proxies: [DIRECT, 手动切换], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China_Map.png}
-
-  # - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png}
-
-  # - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color//Final.png}
-
+ 
   #节点地区分组
 
   - {name: Auto, <<: *auto, icon: 🌐}
@@ -201,7 +190,7 @@ rule-providers:
   # Emby: {<<: *c, format: text, path: ./rule-providers/Emby.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
 
   # # 国际媒体
-  # ProxyMedia: {<<: *c, format: text, path: ./rule-providers/ProxyMedia.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyMedia.list}
+  Github: {<<: *c, format: text, path: ./rule-providers/ghrule.list,  url: https://raw.githubusercontent.com/laivn/Hello-World/master/ghrule.list}
 
   # # 代理网站
   # ProxyGFW: {<<: *c, format: text, path: ./rule-providers/ProxyGFW.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list}
@@ -220,7 +209,6 @@ rules:
   - RULE-SET,Github,香港
   # - RULE-SET,Apple,苹果服务
   # - RULE-SET,OneDrive,微软服务
-  # - RULE-SET,Github,微软服务
   # - RULE-SET,Microsoft,微软服务
   # - RULE-SET,YouTube,谷歌服务
   # - RULE-SET,Google,谷歌服务
@@ -233,8 +221,6 @@ rules:
   # - RULE-SET,ProxyMedia,国际媒体
   # - RULE-SET,ProxyGFW,国外网站
   - RULE-SET,ChinaDomain,DIRECT
-  # - RULE-SET,Lan,DIRECT
-  # - GEOIP,CN,国内网站
   - DOMAIN-SUFFIX,local,DIRECT
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
@@ -243,32 +229,6 @@ rules:
   - IP-CIDR,100.64.0.0/10,DIRECT
   - IP-CIDR,224.0.0.0/4,DIRECT
   - IP-CIDR6,fe80::/10,DIRECT
-  - DOMAIN-KEYWORD,gmail,AI
-  - DOMAIN-KEYWORD,google,AI
-  - DOMAIN-SUFFIX,1e100.net,AI
-  - DOMAIN-SUFFIX,2mdn.net,AI
-  - DOMAIN-SUFFIX,app-measurement.net,AI
-  - DOMAIN-SUFFIX,g.co,AI
-  - DOMAIN-SUFFIX,ggpht.com,AI
-  - DOMAIN-SUFFIX,goo.gl,AI
-  - DOMAIN-SUFFIX,googleapis.cn,AI
-  - DOMAIN-SUFFIX,googleapis.com,AI
-  - DOMAIN-SUFFIX,gstatic.cn,AI
-  - DOMAIN-SUFFIX,gstatic.com,AI
-  - DOMAIN-SUFFIX,gvt0.com,AI
-  - DOMAIN-SUFFIX,gvt1.com,AI
-  - DOMAIN-SUFFIX,gvt2.com,AI
-  - DOMAIN-SUFFIX,gvt3.com,AI
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,AI
-  - DOMAIN-SUFFIX,youtu.be,香港
-  - DOMAIN-SUFFIX,youtube-nocookie.com,香港
-  - DOMAIN-SUFFIX,youtube.com,香港
-  - DOMAIN-SUFFIX,yt.be,香港
-  - DOMAIN-SUFFIX,ytimg.com,香港
-  - DOMAIN-SUFFIX,huggingface.co,AI
-  # - IP-CIDR,74.125.0.0/16,no-resolve,DIRECT
-  # - IP-CIDR,173.194.0.0/16,no-resolve,DIRECT
-
   - MATCH,DIRECT
 
 script:
