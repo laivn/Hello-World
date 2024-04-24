@@ -180,6 +180,7 @@ rule-providers:
 
  
 rules:
+  # - PROCESS-NAME,Transmission.exe,👉 国内网站
   - DOMAIN-KEYWORD,instagram,香港
   - RULE-SET,AI,AI
   - RULE-SET,Github,香港
