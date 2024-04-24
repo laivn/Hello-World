@@ -13,7 +13,7 @@ mixed-port: 7893
 # TCP 并发连接所有 IP, 将使用最快握手的 TCP
 tcp-concurrent: true
 # 允许局域网的连接（可用来共享代理）
-allow-lan: true
+allow-lan: false
 # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录  
 ipv6: false
 # 规则模式：rule/global/direct/script
