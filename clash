@@ -136,6 +136,8 @@ proxy-groups:
 
   - {name: 台湾, <<: *auto, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TWN|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
 
+  - {name: 测试, <<: *auto, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TWN|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
+
   # - {name: 欧洲节点, <<: *auto, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
 
 rule-providers:
