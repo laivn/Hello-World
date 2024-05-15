@@ -11,11 +11,11 @@ p: &p {type: http, interval: 3600, health-check: {enable: true, url: https://www
 proxy-providers:
   provider1:
     <<: *p
-    url: http://192.168.1.60:25500/sub?target=clash&url=http%3A%2F%2F106.15.207.16%3A50000%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D26a6ce5b21c8b5a9db301f566f1a6b33%7Chttps%3A%2F%2Ffm-sub-mainpanel-vygijfogpm.cn-shanghai.fcapp.run%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D85d61f1ec61669786281fc2cadcd4afc&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FSleepyHeeead%2Fsubconverter-config%40master%2Fremote-config%2Fspecial%2Fbasic.ini&exclude=%E5%89%A9%E4%BD%99%7C%E6%9B%B4%E6%96%B0%7CNext%7CValid%7C%E5%88%B0%E6%9C%9F%7C%E5%AE%98%E7%BD%91%7CTraffic&filename=SSP%7CFac%E5%90%88%E5%B9%B6&append_type=true&emoji=true&list=true&tfo=false&scv=true&fdn=false&sort=false&udp=true&new_name=true
+    url: https://fm-sub-mainpanel-vygijfogpm.cn-shanghai.fcapp.run/api/v1/client/subscribe?token=85d61f1ec61669786281fc2cadcd4afc
 
-  # provider2:
-  #   <<: *p
-  #   url: ""
+  provider2:
+    <<: *p
+    url: http://106.15.207.16:50000/api/v1/client/subscribe?token=26a6ce5b21c8b5a9db301f566f1a6b33
 
 ipv6: true
 allow-lan: true
