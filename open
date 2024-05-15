@@ -122,7 +122,6 @@ rules:
   - RULE-SET,pixiv_domain,Pixiv
   - RULE-SET,cn_domain,国内
   - RULE-SET,geolocation-!cn,其他
-  - RULE-SET,AI,美国
   # - RULE-SET,Github,香港
   # - DOMAIN-SUFFIX,huggingface.co,AI
   # - RULE-SET,Google,香港
