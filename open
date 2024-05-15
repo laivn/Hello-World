@@ -84,14 +84,14 @@ proxy-groups:
   - {name: Google, <<: *pr}
   - {name: Telegram, <<: *pr}
   - {name: Twitter, <<: *pr}
-  - {name: Pixiv, <<: *pr}
-  - {name: ehentai, <<: *pr}
+  # - {name: Pixiv, <<: *pr}
+  # - {name: ehentai, <<: *pr}
   - {name: 哔哩哔哩, <<: *pr}
   - {name: 哔哩东南亚, <<: *pr}
   - {name: 巴哈姆特, <<: *pr}
   - {name: YouTube, <<: *pr}
   - {name: NETFLIX, <<: *pr}
-  - {name: Spotify, <<: *pr}
+  # - {name: Spotify, <<: *pr}
   - {name: Github, <<: *pr}
   - {name: 国内, type: select, proxies: [直连, 默认, 香港, 台湾, 日本, 新加坡, 美国, 其它地区, 全部节点, 自动选择]}
   - {name: 其他, <<: *pr}
@@ -109,7 +109,7 @@ proxy-groups:
 rules:
   - GEOIP,lan,直连,no-resolve
   - RULE-SET,biliintl_domain,哔哩东南亚
-  - RULE-SET,ehentai_domain,ehentai
+  # - RULE-SET,ehentai_domain,ehentai
   - RULE-SET,github_domain,Github
   - RULE-SET,twitter_domain,Twitter
   - RULE-SET,youtube_domain,YouTube
@@ -118,8 +118,8 @@ rules:
   - RULE-SET,netflix_domain,NETFLIX
   - RULE-SET,bilibili_domain,哔哩哔哩
   - RULE-SET,bahamut_domain,巴哈姆特
-  - RULE-SET,spotify_domain,Spotify
-  - RULE-SET,pixiv_domain,Pixiv
+  # - RULE-SET,spotify_domain,Spotify
+  # - RULE-SET,pixiv_domain,Pixiv
   - RULE-SET,cn_domain,国内
   - RULE-SET,geolocation-!cn,其他
   # - RULE-SET,Github,香港
