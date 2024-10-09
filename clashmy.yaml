@@ -198,5 +198,4 @@ rules:
   - GEOIP,netflix,NETFLIX
   - GEOIP,telegram,Telegram
   - GEOIP,twitter,Twitter
-  - GEOIP,CN,国内
   - MATCH,其他
