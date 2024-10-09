@@ -194,8 +194,6 @@ rules:
   - GEOSITE,geolocation-!cn,其他
 
   - DOMAIN-KEYWORD,instagram,香港
-  - DOMAIN-SUFFIX,huggingface.co,AI
-
   - GEOIP,google,Google
   - GEOIP,netflix,NETFLIX
   - GEOIP,telegram,Telegram
