@@ -144,6 +144,11 @@ proxy-groups:
     include-all: true
     filter: "(?i)美|us|unitedstates|united states"
 
+  - name: AI
+    type: select
+    include-all: true
+    filter: "(?i)美|us|unitedstates|united states"
+
   - name: 新加坡
     type: select
     include-all: true
@@ -179,6 +184,7 @@ rules:
   - RULE-SET,telegram_ip,Telegram
   - RULE-SET,twitter_ip,Twitter
   - RULE-SET,cn_ip,国内
+  - RULE-SET,AI,AI
   - MATCH,其他
 
 rule-anchor:
@@ -191,6 +197,9 @@ rule-providers:
   cn_domain:
     <<: *domain
     url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+  AI:
+    <<: *domain
+    url: "hhttps://raw.githubusercontent.com/laivn/Hello-World/master/airule.list"
   github_domain:
     <<: *domain
     url: "https://raw.githubusercontent.com/laivn/Hello-World/master/ghrule.list"
