@@ -212,7 +212,3 @@ rules:
   - IP-CIDR,224.0.0.0/4,DIRECT
   - IP-CIDR6,fe80::/10,DIRECT
   - MATCH,DIRECT
-
-script:
-  shortcuts:
-    quic: network == 'udp' and dst_port == 443
