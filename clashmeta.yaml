@@ -324,6 +324,46 @@ proxy-groups:
   - { name: 全部节点, <<: *use }
   - { name: 自动选择, <<: *use, tolerance: 2, type: url-test }
 
+rule-providers:
+
+  # 局域网   
+  # Lan: {<<: *c, format: text, path: ./rule-providers/Lan.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list}
+
+  # 下载服务
+  # Download: {<<: *c, format: text, path: ./rule-providers/Download.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Download.list}
+      
+  # 广告拦截
+  # AD: {<<: *d, format: text, path: ./rule-providers/AD.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list}
+
+  # 苹果服务
+  # Apple: {<<: *c, format: text, path: ./rule-providers/Apple.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
+
+  # 微软服务 
+  # OneDrive: {<<: *c, format: text, path: ./rule-providers/OneDrive.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list}
+  # Microsoft: {<<: *c, format: text, path: ./rule-providers/Microsoft.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list}
+
+  # 谷歌服务
+  # YouTube: {<<: *c, format: text, path: ./rule-providers/YouTube.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list}
+  Google: {<<: *c, format: text, path: ./rule-providers/Google.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list}
+
+  # 电报消息
+  # Telegram: {<<: *c, format: text, path: ./rule-providers/Telegram.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list}
+
+  # 推特消息
+  # Twitter: {<<: *c, format: text, path: ./rule-providers/Twitter.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list}
+
+  # youtube & Github
+  Github: {<<: *c, format: text, path: ./rule-providers/ghrule.list,  url: https://raw.githubusercontent.com/laivn/Hello-World/master/ghrule.list}
+
+  # AI平台
+  AI: {<<: *c, format: text, path: ./rule-providers/AI.list,  url: https://raw.githubusercontent.com/laivn/Hello-World/master/airule.list}
+
+  # 中国大陆
+  ChinaDomain: {<<: *c, format: text, path: ./rule-providers/ChinaDomain.list,  url: https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list}
+
+  # youtube & Github
+  # Github: {<<: *c, format: text, path: ./rule-providers/ghrule.list,  url: https://raw.githubusercontent.com/laivn/Hello-World/master/ghrule.list}
+  
 rules:
   # 若需禁用 QUIC 请取消注释 QUIC 两条规则
   # 防止 YouTube 等使用 QUIC 导致速度不佳, 禁用 443 端口 UDP 流量（不包括国内）
