@@ -3,16 +3,18 @@ proxy-providers:
   Fac:
     url: "https://fm-sub-mainpanel-vygijfogpm.cn-shanghai.fcapp.run/api/v1/client/subscribe?token=85d61f1ec61669786281fc2cadcd4afc"
     type: http
-    interval: 86400
-    health-check: {enable: true,url: "https://www.gstatic.com/generate_204", interval: 300}
+    # 自动更新订阅时间，单位为秒
+    interval: 3600
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204", interval: 300 } # interval 节点连通性检测时间，单位为秒
     override:
       additional-prefix: "[Fac]"
 
   SSP:
     url: "https://sspinet-zaeoxnowmv.cn-shanghai.fcapp.run/api/v1/client/subscribe?token=26a6ce5b21c8b5a9db301f566f1a6b33"
     type: http
-    interval: 86400
-    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 300}
+    # 自动更新订阅时间，单位为秒
+    interval: 3600
+    health-check: {enable: true,url: "https://www.gstatic.com/generate_204",interval: 300} # interval 节点连通性检测时间，单位为秒
     override:
       additional-prefix: "[SSP]"
 
@@ -21,22 +23,38 @@ proxies:
     type: direct
     udp: true
 
+# socks5/http 端口
 mixed-port: 7890
+# ipv6 支持
 ipv6: true
+# 允许局域网连接
 allow-lan: true
+# 统一延迟
+# 更换延迟计算方式,去除握手等额外延迟
 unified-delay: false
+# TCP 并发
+# 同时对所有ip进行连接，返回延迟最低的地址
 tcp-concurrent: true
+# 外部控制端口
 external-controller: 127.0.0.1:9090
 external-ui: ui
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
+# 进程匹配模式
+# 路由器上请设置为 off
+# always 开启，强制匹配所有进程
+# strict 默认，由 Clash 判断是否开启
+# off 不匹配进程，推荐在路由器上使用此模式
 find-process-mode: strict
+# 全局客户端指纹
 global-client-fingerprint: chrome
 
+# 缓存
 profile:
   store-selected: true
   store-fake-ip: true
 
+# 域名嗅探
 sniffer:
   enable: true
   sniff:
@@ -51,6 +69,7 @@ sniffer:
     - "Mijia Cloud"
     - "+.push.apple.com"
 
+# tun 模式
 tun:
   enable: true
   stack: mixed
@@ -61,9 +80,13 @@ tun:
   auto-redirect: true
   auto-detect-interface: true
 
+# dns 设置
+# 已配置 ipv6
 dns:
   enable: true
   ipv6: true
+  # 路由器个人建议使用 redir-host 以最佳兼容性
+  # 其他设备可以使用 fake-ip
   respect-rules: true
   enhanced-mode: fake-ip
   fake-ip-filter:
@@ -89,57 +112,57 @@ proxy-groups:
 
   - name: 默认
     type: select
-    proxies: [自动选择,直连]
+    proxies: [🔃自动选择,直连]
 
   - name: Google
     type: url-test
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
+    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
   - name: Telegram
     type: url-test
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
+    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
   - name: Twitter
     type: url-test
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
+    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
   - name: YouTube
     type: url-test
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
+    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
   - name: NETFLIX
     type: url-test
-    proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
+    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
   - name: Github
     type: url-test
-    proxies:  [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
+    proxies:  [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
-  - name: 国内
+  - name: 🇨🇳国内
     type: select
     proxies:  [直连]
 
-  - name: 其他
+  - name: 🌏其他
     type: url-test
-    proxies:  [自动选择]
+    proxies:  [🔃自动选择]
 
   #分隔,下面是地区分组
-  - name: 香港
+  - name: 🇭🇰香港
     type: url-test
     include-all: true
     filter: "(?i)港|hk|hongkong|hong kong"
 
-  - name: 台湾
+  - name: 🇼🇸台湾
     type: url-test
     include-all: true
     filter: "(?i)台|tw|taiwan"
 
-  - name: 日本
+  - name: 🇯🇵日本
     type: url-test
     include-all: true
     filter: "(?i)日|jp|japan"
 
-  - name: 美国
+  - name: 🇺🇸美国
     type: url-test
     include-all: true
     filter: "(?i)美|us|unitedstates|united states"
@@ -149,12 +172,12 @@ proxy-groups:
     include-all: true
     filter: "(?i)美|us|unitedstates|united states"
 
-  - name: 新加坡
+  - name: 🇸🇬新加坡
     type: url-test
     include-all: true
     filter: "(?i)(新|sg|singapore)"
 
-  - name: 其它地区
+  - name: 🌏其他地区
     type: url-test
     include-all: true
     filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates)).*"
@@ -163,13 +186,13 @@ proxy-groups:
     type: select
     include-all: true
 
-  - name: 自动选择
+  - name: 🔃自动选择
     type: url-test
     include-all: true
     tolerance: 10
 
 rules:
-  - DOMAIN-KEYWORD,gemini,美国
+  - DOMAIN-KEYWORD,gemini,🇺🇸美国
   - RULE-SET,private_ip,直连,no-resolve
   - RULE-SET,GFWList,Github
   - RULE-SET,GFWList,Twitter
@@ -177,11 +200,11 @@ rules:
   - RULE-SET,GFWList,Google
   - RULE-SET,GFWList,Telegram
   - RULE-SET,GFWList,NETFLIX
-  - RULE-SET,cn_domain,国内
-  - RULE-SET,geolocation-!cn,其他
-  - RULE-SET,cn_ip,国内
+  - RULE-SET,cn_domain,🇨🇳国内
+  - RULE-SET,geolocation-!cn,🌏其他
+  - RULE-SET,cn_ip,🇨🇳国内
   - RULE-SET,GFWList,AI
-  - MATCH,其他
+  - MATCH,🌏其他
 
 rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
