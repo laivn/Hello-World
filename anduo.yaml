@@ -92,27 +92,27 @@ proxy-groups:
     proxies: [自动选择,直连]
 
   - name: Google
-    type: select
+    type: url-test
     proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
 
   - name: Telegram
-    type: select
+    type: url-test
     proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
 
   - name: Twitter
-    type: select
+    type: url-test
     proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
 
   - name: YouTube
-    type: select
+    type: url-test
     proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
 
   - name: NETFLIX
-    type: select
+    type: url-test
     proxies: [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
 
   - name: Github
-    type: select
+    type: url-test
     proxies:  [默认,香港,台湾,日本,新加坡,美国,其它地区,全部节点,自动选择,直连]
 
   - name: 国内
@@ -120,42 +120,42 @@ proxy-groups:
     proxies:  [直连]
 
   - name: 其他
-    type: select
+    type: url-test
     proxies:  [自动选择]
 
   #分隔,下面是地区分组
   - name: 香港
-    type: select
+    type: url-test
     include-all: true
     filter: "(?i)港|hk|hongkong|hong kong"
 
   - name: 台湾
-    type: select
+    type: url-test
     include-all: true
     filter: "(?i)台|tw|taiwan"
 
   - name: 日本
-    type: select
+    type: url-test
     include-all: true
     filter: "(?i)日|jp|japan"
 
   - name: 美国
-    type: select
+    type: url-test
     include-all: true
     filter: "(?i)美|us|unitedstates|united states"
 
   - name: AI
-    type: select
+    type: url-test
     include-all: true
     filter: "(?i)美|us|unitedstates|united states"
 
   - name: 新加坡
-    type: select
+    type: url-test
     include-all: true
     filter: "(?i)(新|sg|singapore)"
 
   - name: 其它地区
-    type: select
+    type: url-test
     include-all: true
     filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates)).*"
 
@@ -170,21 +170,17 @@ proxy-groups:
 
 rules:
   - RULE-SET,private_ip,直连,no-resolve
-  - RULE-SET,github_domain,Github
-  - RULE-SET,twitter_domain,Twitter
-  - RULE-SET,youtube_domain,YouTube
-  - RULE-SET,google_domain,Google
-  - RULE-SET,telegram_domain,Telegram
-  - RULE-SET,netflix_domain,NETFLIX
+  - RULE-SET,GFWList,Github
+  - RULE-SET,GFWList,Twitter
+  - RULE-SET,GFWList,YouTube
+  - RULE-SET,GFWList,Google
+  - RULE-SET,GFWList,Telegram
+  - RULE-SET,GFWList,NETFLIX
   - RULE-SET,cn_domain,国内
   - RULE-SET,geolocation-!cn,其他
 
-  - RULE-SET,google_ip,Google
-  - RULE-SET,netflix_ip,NETFLIX
-  - RULE-SET,telegram_ip,Telegram
-  - RULE-SET,twitter_ip,Twitter
   - RULE-SET,cn_ip,国内
-  - RULE-SET,AI,AI
+  - RULE-SET,GFWList,AI
   - MATCH,其他
 
 rule-anchor:
@@ -242,7 +238,7 @@ rule-providers:
   twitter_ip:
     <<: *ip
     url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list"
-  telegram_ip:
+  GFWList:
     <<: *ip
-    url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list"
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
 
