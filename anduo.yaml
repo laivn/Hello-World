@@ -169,6 +169,7 @@ proxy-groups:
     tolerance: 10
 
 rules:
+  - DOMAIN-KEYWORD,gemini,美国
   - RULE-SET,private_ip,直连,no-resolve
   - RULE-SET,GFWList,Github
   - RULE-SET,GFWList,Twitter
@@ -178,7 +179,6 @@ rules:
   - RULE-SET,GFWList,NETFLIX
   - RULE-SET,cn_domain,国内
   - RULE-SET,geolocation-!cn,其他
-
   - RULE-SET,cn_ip,国内
   - RULE-SET,GFWList,AI
   - MATCH,其他
