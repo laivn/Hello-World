@@ -72,12 +72,12 @@ proxy-providers:
   订阅一:
     <<: *p
     # path: ./proxy_provider/订阅一.yaml
-    url: "https://example.com/airport?type=clashmeta&protocol=shadowsocks&rule=default"
+    url: "https://sspinet-zaeoxnowmv.cn-shanghai.fcapp.run/api/v1/client/subscribe?token=26a6ce5b21c8b5a9db301f566f1a6b33"
 
   订阅二:
     <<: *p
     # path: ./proxy_provider/订阅二.yaml
-    url: "https://example.com/api/v1/client/subscribe?token=ilovechina"
+    url: "https://neo.facal.one/api/v1/client/subscribe?token=85d61f1ec61669786281fc2cadcd4afc"
 
   # 本地配置:
     # <<: *p
