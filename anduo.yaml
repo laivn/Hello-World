@@ -201,7 +201,7 @@ proxy-groups:
     filter: "(?i)^(?!.*(?:Traffic|Next|Valid|剩余|距离|套餐)).*"
 
 rules:
-  # - DOMAIN-KEYWORD,gemini,🇺🇸美国
+  - DOMAIN-KEYWORD,gemini,🇺🇸美国
   # - RULE-SET,private_ip,直连,no-resolve
   # - RULE-SET,GFWList,Github
   # - RULE-SET,GFWList,Twitter
