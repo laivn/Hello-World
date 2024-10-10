@@ -87,7 +87,7 @@ dns:
   ipv6: true
   # 路由器个人建议使用 redir-host 以最佳兼容性
   # 其他设备可以使用 fake-ip
-  respect-rules: true
+  respect-rules: false
   enhanced-mode: fake-ip
   fake-ip-filter:
     - "*"
