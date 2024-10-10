@@ -192,7 +192,7 @@ proxy-groups:
     tolerance: 10
 
 rules:
-  - DOMAIN-KEYWORD,gemini,🇺🇸美国
+  # - DOMAIN-KEYWORD,gemini,🇺🇸美国
   # - RULE-SET,private_ip,直连,no-resolve
   # - RULE-SET,GFWList,Github
   # - RULE-SET,GFWList,Twitter
@@ -201,7 +201,8 @@ rules:
   # - RULE-SET,GFWList,Telegram
   # - RULE-SET,GFWList,NETFLIX
   # - RULE-SET,cn_domain,🇨🇳国内
-  - RULE-SET,geolocation-!cn,🇨🇳国内
+  # - RULE-SET,geolocation-!cn,🇨🇳国内
+  - RULE-SET,AI,🇺🇸美国
   - RULE-SET,cn_ip,🇨🇳国内
   - RULE-SET,GFWList,🔃自动选择
   - MATCH,🔃自动选择
@@ -210,12 +211,12 @@ rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
 rule-providers:
-  # private_domain:
-  #   <<: *domain
-  #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
-  # cn_domain:
-  #   <<: *domain
-  #   url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+  GFWList:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+  cn_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
   AI:
     <<: *domain
     url: "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
@@ -248,20 +249,22 @@ rule-providers:
   #   <<: *ip
   #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
   
+  # ip规则
+
   # 中国大陆
   cn_ip:
     <<: *ip
-    url: "ttps://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
-  google_ip:
-    <<: *ip
-    url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list"
-  netflix_ip:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"
-  twitter_ip:
-    <<: *ip
-    url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list"
-  GFWList:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
+    url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+  # google_ip:
+  #   <<: *ip
+  #   url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list"
+  # netflix_ip:
+  #   <<: *ip
+  #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"
+  # twitter_ip:
+  #   <<: *ip
+  #   url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list"
+  # GFWList:
+  #   <<: *ip
+  #   url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
 
