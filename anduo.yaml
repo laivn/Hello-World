@@ -95,18 +95,26 @@ dns:
     - "+.local"
     - "+.market.xiaomi.com"
   nameserver:
-    - https://120.53.53.53/dns-query
-    - https://223.5.5.5/dns-query
-  proxy-server-nameserver:
-    - https://120.53.53.53/dns-query
-    - https://223.5.5.5/dns-query
-  nameserver-policy:
-    "rule-set:cn_domain,private_domain":
-      - https://120.53.53.53/dns-query
-      - https://223.5.5.5/dns-query
-    "rule-set:geolocation-!cn":
-      - "https://dns.cloudflare.com/dns-query"
-      - "https://dns.google/dns-query"
+    - 223.5.5.5
+    - 1.1.1.1
+    - 8.8.8.8
+    - 2400:3200::1
+    - 2400:3200:baba::1
+    - 2606:4700:4700::1111
+    - 2606:4700:4700::1001
+    - 2001:4860:4860::8888
+    - 2001:4860:4860::8844
+    # - https://223.5.5.5/dns-query
+  # proxy-server-nameserver:
+  #   - https://120.53.53.53/dns-query
+  #   - https://223.5.5.5/dns-query
+  # nameserver-policy:
+  #   "rule-set:cn_domain,private_domain":
+  #     - https://120.53.53.53/dns-query
+  #     - https://223.5.5.5/dns-query
+  #   "rule-set:geolocation-!cn":
+  #     - "https://dns.cloudflare.com/dns-query"
+  #     - "https://dns.google/dns-query"
 
 proxy-groups:
 
