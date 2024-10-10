@@ -198,6 +198,7 @@ proxy-groups:
     type: url-test
     include-all: true
     tolerance: 10
+    filter: "(?i)^(?!.*(?:Traffic|Next|Valid|剩余|距离|套餐)).*"
 
 rules:
   # - DOMAIN-KEYWORD,gemini,🇺🇸美国
