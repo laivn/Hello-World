@@ -200,7 +200,7 @@ rules:
   # - RULE-SET,GFWList,Google
   # - RULE-SET,GFWList,Telegram
   # - RULE-SET,GFWList,NETFLIX
-  - RULE-SET,cn_domain,🇨🇳国内
+  # - RULE-SET,cn_domain,🇨🇳国内
   - RULE-SET,geolocation-!cn,🇨🇳国内
   - RULE-SET,cn_ip,🇨🇳国内
   - RULE-SET,GFWList,🔃自动选择
@@ -213,9 +213,9 @@ rule-providers:
   # private_domain:
   #   <<: *domain
   #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
-  cn_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+  # cn_domain:
+  #   <<: *domain
+  #   url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
   AI:
     <<: *domain
     url: "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
