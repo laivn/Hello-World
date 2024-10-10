@@ -209,10 +209,10 @@ rules:
   # - RULE-SET,GFWList,Google
   # - RULE-SET,GFWList,Telegram
   # - RULE-SET,GFWList,NETFLIX
-  - RULE-SET,cn_domain,🇨🇳国内
+  - RULE-SET,cn_domain,DIRECT
   # - RULE-SET,geolocation-!cn,🇨🇳国内
   - RULE-SET,AI,🇺🇸美国
-  - RULE-SET,cn_ip,🇨🇳国内
+  - RULE-SET,cn_ip,DIRECT
   - RULE-SET,GFWList,🔃自动选择
   - MATCH,🔃自动选择
   - GEOIP,LAN,DIRECT
