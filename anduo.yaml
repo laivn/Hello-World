@@ -1,7 +1,7 @@
 # url 里填写自己的订阅,名称不能重复
 proxy-providers:
   Fac:
-    url: "https://fm-sub-mainpanel-vygijfogpm.cn-shanghai.fcapp.run/api/v1/client/subscribe?token=85d61f1ec61669786281fc2cadcd4afc"
+    url: "https://neo.facal.one/api/v1/client/subscribe?token=85d61f1ec61669786281fc2cadcd4afc"
     type: http
     # 自动更新订阅时间，单位为秒
     interval: 3600
@@ -114,29 +114,29 @@ proxy-groups:
     type: select
     proxies: [🔃自动选择,直连]
 
-  - name: Google
-    type: url-test
-    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
+  # - name: Google
+  #   type: url-test
+  #   proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
-  - name: Telegram
-    type: url-test
-    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
+  # - name: Telegram
+  #   type: url-test
+  #   proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
-  - name: Twitter
-    type: url-test
-    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
+  # - name: Twitter
+  #   type: url-test
+  #   proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
-  - name: YouTube
-    type: url-test
-    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
+  # - name: YouTube
+  #   type: url-test
+  #   proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
-  - name: NETFLIX
-    type: url-test
-    proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
+  # - name: NETFLIX
+  #   type: url-test
+  #   proxies: [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
-  - name: Github
-    type: url-test
-    proxies:  [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
+  # - name: Github
+  #   type: url-test
+  #   proxies:  [默认,🇭🇰香港,🇼🇸台湾,🇯🇵日本,🇸🇬新加坡,🇺🇸美国,🌏其他地区,全部节点,🔃自动选择,直连]
 
   - name: 🇨🇳国内
     type: select
@@ -167,10 +167,10 @@ proxy-groups:
     include-all: true
     filter: "(?i)美|us|unitedstates|united states"
 
-  - name: AI
-    type: url-test
-    include-all: true
-    filter: "(?i)美|us|unitedstates|united states"
+  # - name: AI
+  #   type: url-test
+  #   include-all: true
+  #   filter: "(?i)美|us|unitedstates|united states"
 
   - name: 🇸🇬新加坡
     type: url-test
@@ -193,26 +193,26 @@ proxy-groups:
 
 rules:
   - DOMAIN-KEYWORD,gemini,🇺🇸美国
-  - RULE-SET,private_ip,直连,no-resolve
-  - RULE-SET,GFWList,Github
-  - RULE-SET,GFWList,Twitter
-  - RULE-SET,GFWList,YouTube
-  - RULE-SET,GFWList,Google
-  - RULE-SET,GFWList,Telegram
-  - RULE-SET,GFWList,NETFLIX
+  # - RULE-SET,private_ip,直连,no-resolve
+  # - RULE-SET,GFWList,Github
+  # - RULE-SET,GFWList,Twitter
+  # - RULE-SET,GFWList,YouTube
+  # - RULE-SET,GFWList,Google
+  # - RULE-SET,GFWList,Telegram
+  # - RULE-SET,GFWList,NETFLIX
   - RULE-SET,cn_domain,🇨🇳国内
-  - RULE-SET,geolocation-!cn,🌏其他
+  - RULE-SET,geolocation-!cn,🇨🇳国内
   - RULE-SET,cn_ip,🇨🇳国内
-  - RULE-SET,GFWList,AI
-  - MATCH,🌏其他
+  - RULE-SET,GFWList,🔃自动选择
+  - MATCH,🔃自动选择
 
 rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
   domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
 rule-providers:
-  private_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
+  # private_domain:
+  #   <<: *domain
+  #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
   cn_domain:
     <<: *domain
     url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
@@ -225,28 +225,28 @@ rule-providers:
   twitter_domain:
     <<: *domain
     url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list"
-  youtube_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
+  # youtube_domain:
+  #   <<: *domain
+  #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
   google_domain:
     <<: *domain
     url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list"
   telegram_domain:
     <<: *domain
     url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list"
-  netflix_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"
-  pixiv_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pixiv.mrs"
-  geolocation-!cn:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
+  # netflix_domain:
+  #   <<: *domain
+  #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"
+  # pixiv_domain:
+  #   <<: *domain
+  #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pixiv.mrs"
+  # geolocation-!cn:
+  #   <<: *domain
+  #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
 
-  private_ip:
-    <<: *ip
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
+  # private_ip:
+  #   <<: *ip
+  #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
   
   # 中国大陆
   cn_ip:
