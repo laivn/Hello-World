@@ -209,7 +209,7 @@ rules:
   # - RULE-SET,GFWList,Google
   # - RULE-SET,GFWList,Telegram
   # - RULE-SET,GFWList,NETFLIX
-  # - RULE-SET,cn_domain,🇨🇳国内
+  - RULE-SET,cn_domain,🇨🇳国内
   # - RULE-SET,geolocation-!cn,🇨🇳国内
   - RULE-SET,AI,🇺🇸美国
   - RULE-SET,cn_ip,🇨🇳国内
@@ -223,9 +223,9 @@ rule-providers:
   GFWList:
     <<: *domain
     url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt"
-  cn_domain:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+  # cn_domain:
+  #   <<: *domain
+  #   url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
   AI:
     <<: *domain
     url: "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
@@ -244,6 +244,9 @@ rule-providers:
   telegram_domain:
     <<: *domain
     url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list"
+  cn_domain:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
   # netflix_domain:
   #   <<: *domain
   #   url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"
@@ -263,7 +266,7 @@ rule-providers:
   # 中国大陆
   cn_ip:
     <<: *ip
-    url: "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+    url: "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt"
   # google_ip:
   #   <<: *ip
   #   url: "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list"
