@@ -1,6 +1,10 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1073/bb/3067534226d20fa2cabbac88ac2e00_180_135.jpg?1702460582&476237" group-title="英雄联盟",Theshy
-http://148.135.93.213:81/live/huya/991111
+htlive/tp://148.135.93.213:81/huya/991111
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1073/bb/3067534226d20fa2cabbac88ac2e00_180_135.jpg?1702460582&476237" group-title="英雄联盟",Theshy
+http://dns.yiandrive.com:16813/huya/99111
+
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1049/d2/4f7d5063c5bcfff780ff4ab5a7d74a_180_135.jpg?1638862345&476237" group-title="英雄联盟",ning
 http://148.135.93.213:81/live/huya/980312
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1061/de/19441c401c9d6fba4cea0829a77cd0_180_135.jpg?1702744813&476237" group-title="英雄联盟",Baolan
@@ -39,6 +43,5 @@ https://www.goodiptv.club/bilibili/7734200
 #EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/face/a1f3ffbb8dbb60eb995b74a5fbf6182168a69a56.jpg" group-title="英雄联盟",LOL赛事直播
 https://www.goodiptv.club/bilibili/26413056
 
-
-#EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/face/a1f3ffbb8dbb60eb995b74a5fbf6182168a69a56.jpg" group-title="英雄联盟",LOL
-http://dns.yiandrive.com:16813/huya/99111
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1081/57/07061fcf3f531ec75e4d0366f81684_180_135.jpg?1730887103&481087" group-title="英雄联盟",虎牙传奇杯
+http://dns.yiandrive.com:16813/huya/660162
