@@ -7,11 +7,19 @@ http://dns.yiandrive.com:16813/huya/99111
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1049/d2/4f7d5063c5bcfff780ff4ab5a7d74a_180_135.jpg" group-title="英雄联盟",ning
 http://148.135.93.213:81/live/huya/980312
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1049/d2/4f7d5063c5bcfff780ff4ab5a7d74a_180_135.jpg" group-title="英雄联盟",ning
+http://dns.yiandrive.com:16813/huya/980312
+
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1061/de/19441c401c9d6fba4cea0829a77cd0_180_135.jpg" group-title="英雄联盟",Baolan
 http://148.135.93.213:81/live/huya/990716
 
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1061/de/19441c401c9d6fba4cea0829a77cd0_180_135.jpg" group-title="英雄联盟",Baolan
+http://dns.yiandrive.com:16813/huya/990716
+
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1084/45/72830cef1a5cd56eb29c0af0815d31_180_135.jpg" group-title="英雄联盟",Rookie
 http://148.135.93.213:81/live/huya/970311
+
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1084/45/72830cef1a5cd56eb29c0af0815d31_180_135.jpg" group-title="英雄联盟",Rookie
 http://dns.yiandrive.com:16813/huya/970311
 
@@ -37,6 +45,9 @@ http://148.135.93.213:81/live/huya/29701517?quality=30000
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1042/6f/3626ef611e990cbbcefab8e1bbc561_180_135.jpg" group-title="英雄联盟",虎牙英雄联盟
 http://148.135.93.213:81/live/huya/660000?quality=30000
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1042/6f/3626ef611e990cbbcefab8e1bbc561_180_135.jpg" group-title="英雄联盟",虎牙英雄联盟
+http://dns.yiandrive.com:16813/huya/660000
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1081/57/07061fcf3f531ec75e4d0366f81684_180_135.jpg" group-title="英雄联盟",虎牙传奇杯
 http://148.135.93.213:81/live/huya/660162?quality=30000
