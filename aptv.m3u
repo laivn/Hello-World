@@ -4,25 +4,25 @@
 http://148.135.93.213:81/live/huya/991111
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1073/bb/3067534226d20fa2cabbac88ac2e00_180_135.jpg" group-title="英雄联盟",Theshy
-https://www.goodiptv.club/huya/99111
+https://www.goodiptv.club/huya/99111?type=json
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1049/d2/4f7d5063c5bcfff780ff4ab5a7d74a_180_135.jpg" group-title="英雄联盟",ning
 http://148.135.93.213:81/live/huya/980312
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1049/d2/4f7d5063c5bcfff780ff4ab5a7d74a_180_135.jpg" group-title="英雄联盟",ning
-https://www.goodiptv.club/huya/980312
+https://www.goodiptv.club/huya/980312?type=json
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1061/de/19441c401c9d6fba4cea0829a77cd0_180_135.jpg" group-title="英雄联盟",Baolan
 http://148.135.93.213:81/live/huya/990716
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1061/de/19441c401c9d6fba4cea0829a77cd0_180_135.jpg" group-title="英雄联盟",Baolan
-https://www.goodiptv.club/huya/990716
+https://www.goodiptv.club/huya/990716?type=json
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1084/45/72830cef1a5cd56eb29c0af0815d31_180_135.jpg" group-title="英雄联盟",Rookie
 http://148.135.93.213:81/live/huya/970311
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1084/45/72830cef1a5cd56eb29c0af0815d31_180_135.jpg" group-title="英雄联盟",Rookie
-https://www.goodiptv.club/huya/huya/970311
+https://www.goodiptv.club/huya/huya/970311?type=json
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1058/b2/e81cad4e92aecc726c023d7fc5c717_180_135.jpg" group-title="英雄联盟",JackeyLove
 http://148.135.93.213:81/live/huya/111800
@@ -34,13 +34,13 @@ http://148.135.93.213:81/live/huya/uzi
 http://148.135.93.213:81/live/huya/890001
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1006/d5/e6792b722c70a266a10f70f8778e47_180_135.jpg" group-title="英雄联盟",957
-https://www.goodiptv.club/huya/890001
+https://www.goodiptv.club/huya/890001?type=json
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1094/fb/41f8a51c2ebd13d0a469452feee873_180_135.jpg" group-title="英雄联盟",记得
 http://148.135.93.213:81/live/huya/528222
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1094/fb/41f8a51c2ebd13d0a469452feee873_180_135.jpg" group-title="英雄联盟",记得
-https://www.goodiptv.club/huya/528222
+https://www.goodiptv.club/huya/528222?type=json
 
 #EXTINF:-1 tvg-logo="https://apic.douyucdn.cn/upload/avatar_v3/202008/a37168c153d94b52b540c5d35ceefa20_big.jpg" group-title="英雄联盟",imp
 http://148.135.93.213:81/live/douyu/522387
@@ -58,19 +58,19 @@ http://148.135.93.213:81/live/huya/29701517
 http://148.135.93.213:81/live/huya/660000
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1042/6f/3626ef611e990cbbcefab8e1bbc561_180_135.jpg" group-title="英雄联盟",虎牙英雄联盟
-https://www.goodiptv.club/huya/660000
+https://www.goodiptv.club/huya/660000?type=json
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1081/57/07061fcf3f531ec75e4d0366f81684_180_135.jpg" group-title="英雄联盟",虎牙传奇杯
 http://148.135.93.213:81/live/huya/660162
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1081/57/07061fcf3f531ec75e4d0366f81684_180_135.jpg" group-title="英雄联盟",虎牙传奇杯
-https://www.goodiptv.club/huya/660162
+https://www.goodiptv.club/huya/660162?type=json
 
 #EXTINF:-1 tvg-logo="https://i2.hdslb.com/bfs/face/544c89e68f2b1f12ffcbb8b3c062a3328e8692d9.jpg" group-title="英雄联盟",哔哩哔哩英雄联盟赛事
-https://www.goodiptv.club/bilibili/7734200
+https://www.goodiptv.club/bilibili/7734200?type=json
 
 #EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/face/a1f3ffbb8dbb60eb995b74a5fbf6182168a69a56.jpg" group-title="英雄联盟",LOL赛事直播
-https://www.goodiptv.club/bilibili/26413056
+https://www.goodiptv.club/bilibili/26413056?type=json
 
 
 
