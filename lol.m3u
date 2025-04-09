@@ -35,3 +35,9 @@ http://148.135.93.213:81/live/huya/660000
 
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1081/57/07061fcf3f531ec75e4d0366f81684_180_135.jpg" group-title="英雄联盟",虎牙传奇杯
 http://148.135.93.213:81/live/huya/660162
+
+#EXTINF:-1 tvg-logo="https://i2.hdslb.com/bfs/face/544c89e68f2b1f12ffcbb8b3c062a3328e8692d9.jpg" group-title="英雄联盟",哔哩哔哩英雄联盟赛事
+http://148.135.93.213:81/live/bilibili/7734200
+
+#EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/face/a1f3ffbb8dbb60eb995b74a5fbf6182168a69a56.jpg" group-title="英雄联盟",LOL赛事直播
+http://148.135.93.213:81/live/bilibili/26413056
