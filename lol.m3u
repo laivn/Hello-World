@@ -30,6 +30,9 @@ http://148.135.93.213:81/live/huya/149361
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1003/60/d823b6b3dfcedccc569e35beabbaca_180_135.jpg" group-title="英雄联盟",rita
 http://148.135.93.213:81/live/huya/910004
 
+#EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/face/cb946e532401807bf4e5107b971d3be823a31c4f.jpg" group-title="英雄联盟",解说小米
+http://148.135.93.213:81/live/bilibili/952785
+
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1038/5d/0d26e4a8b734f422781989268cd4b8_180_135.jpg" group-title="英雄联盟",解说海威
 http://148.135.93.213:81/live/huya/262985
 
