@@ -1,7 +1,7 @@
 # url 里填写自己的订阅,名称不能重复
 proxy-providers:
   Fac:
-    url: "https://neo.facal.one/api/v1/client/subscribe?token=85d61f1ec61669786281fc2cadcd4afc"
+    url: "https://"
     type: http
     # 自动更新订阅时间，单位为秒
     interval: 3600
