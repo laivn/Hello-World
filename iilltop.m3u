@@ -1,7 +1,64 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 
-#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1042/6f/3626ef611e990cbbcefab8e1bbc561_180_135.jpg" group-title="英雄联盟",虎牙英雄联盟
-http://148.135.93.213:81/live/huya/660000?quality=30000
-
-#EXTINF:-1 tvg-logo="https://tv-1.iill.top/LOGO/991111&huya&logo" group-title="•虎牙「游戏」",theshy
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1073/bb/3067534226d20fa2cabbac88ac2e00_180_135.jpg" group-title="•虎牙「游戏」",theshy
 https://live.iill.top/huya/991111
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1073/bb/3067534226d20fa2cabbac88ac2e00_180_135.jpg" group-title="英雄联盟",Theshy
+https://live.iill.top/live/huya/991111
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1049/d2/4f7d5063c5bcfff780ff4ab5a7d74a_180_135.jpg" group-title="英雄联盟",ning
+https://live.iill.top/live/huya/980312
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1061/de/19441c401c9d6fba4cea0829a77cd0_180_135.jpg" group-title="英雄联盟",Baolan
+https://live.iill.top/live/huya/990716
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1092/aa/2b3b0d8113e96f583746cfb5f4697f_180_135.jpg" group-title="英雄联盟",Tian
+https://live.iill.top/live/huya/594877
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1084/45/72830cef1a5cd56eb29c0af0815d31_180_135.jpg" group-title="英雄联盟",Rookie
+https://live.iill.top/live/huya/970311
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1048/57/c520ca01e7a02975e7e5d96f432cff_180_135.jpg" group-title="英雄联盟",Uzi
+https://live.iill.top/live/huya/100
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1006/d5/e6792b722c70a266a10f70f8778e47_180_135.jpg" group-title="英雄联盟",957
+https://live.iill.top/live/huya/890001
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1094/fb/41f8a51c2ebd13d0a469452feee873_180_135.jpg" group-title="英雄联盟",记得
+https://live.iill.top/live/huya/528222
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1018/01/f6d62e7142d676e347c66b00288c95_180_135.jpg" group-title="英雄联盟",米勒
+https://live.iill.top/live/huya/149361
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1003/60/d823b6b3dfcedccc569e35beabbaca_180_135.jpg" group-title="英雄联盟",rita
+https://live.iill.top/live/huya/910004
+
+#EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/face/cb946e532401807bf4e5107b971d3be823a31c4f.jpg" group-title="英雄联盟",解说小米
+https://live.iill.top/live/bilibili/952785
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1038/5d/0d26e4a8b734f422781989268cd4b8_180_135.jpg" group-title="英雄联盟",解说海威
+https://live.iill.top/live/huya/262985
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1058/ac/b10c27ce9d1bbf19757461ec43be7b_180_135.jpg" group-title="英雄联盟",Faker
+https://live.iill.top/live/huya/138156
+
+#EXTINF:-1 tvg-logo="https://apic.douyucdn.cn/upload/avatar_v3/202008/a37168c153d94b52b540c5d35ceefa20_big.jpg" group-title="英雄联盟",imp
+https://live.iill.top/live/douyu/522387
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1047/96/0403fb27c64440fbbfd6499c34cb65_180_135.jpg" group-title="英雄联盟",电竞世界杯
+https://live.iill.top/live/huya/660116
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1046/a3/798c2f1e292ef8d108da9062f91980_180_135.jpg" group-title="英雄联盟",电竞世界杯B
+https://live.iill.top/live/huya/29701517
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1042/6f/3626ef611e990cbbcefab8e1bbc561_180_135.jpg" group-title="英雄联盟",虎牙英雄联盟
+https://live.iill.top/live/huya/660000
+
+#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1081/57/07061fcf3f531ec75e4d0366f81684_180_135.jpg" group-title="英雄联盟",虎牙传奇杯
+https://live.iill.top/live/huya/660162
+
+#EXTINF:-1 tvg-logo="https://i2.hdslb.com/bfs/face/544c89e68f2b1f12ffcbb8b3c062a3328e8692d9.jpg" group-title="英雄联盟",哔哩哔哩英雄联盟赛事
+https://live.iill.top/live/bilibili/7734200
+
+#EXTINF:-1 tvg-logo="https://i0.hdslb.com/bfs/face/a1f3ffbb8dbb60eb995b74a5fbf6182168a69a56.jpg" group-title="英雄联盟",LOL赛事直播
+https://live.iill.top/live/bilibili/26413056
