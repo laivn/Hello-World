@@ -1,8 +1,5 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 
-#EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1073/bb/3067534226d20fa2cabbac88ac2e00_180_135.jpg" group-title="•虎牙「游戏」",theshy
-https://live.iill.top/huya/991111
-
 #EXTINF:-1 tvg-logo="https://huyaimg.msstatic.com/avatar/1073/bb/3067534226d20fa2cabbac88ac2e00_180_135.jpg" group-title="英雄联盟",Theshy
 https://live.iill.top/live/huya/991111
 
